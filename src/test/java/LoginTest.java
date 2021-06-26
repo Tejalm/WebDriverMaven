@@ -27,8 +27,9 @@ public class LoginTest {
 	{
 		driver.get("https://www.flipkart.com/");
 		System.out.println("Title of page is :" + driver.getTitle());
+		//added new code for login
 		driver.findElement(By.xpath("//input[@class='_2IX_2- VJZDxU']")).sendKeys("abc");
-		driver.findElement(By.xpath("//input[@type='password']")).sendKeys("def");
+		driver.findElement(By.xpath("//input[@type='passwo']")).sendKeys("def");
 	}
 	
 	
