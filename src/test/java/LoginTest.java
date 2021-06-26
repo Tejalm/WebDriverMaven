@@ -1,3 +1,4 @@
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
@@ -26,6 +27,8 @@ public class LoginTest {
 	{
 		driver.get("https://www.flipkart.com/");
 		System.out.println("Title of page is :" + driver.getTitle());
+		driver.findElement(By.xpath("//input[@class='_2IX_2- VJZDxU']")).sendKeys("abc");
+		driver.findElement(By.xpath("//input[@type='password']")).sendKeys("def");
 	}
 	
 	
